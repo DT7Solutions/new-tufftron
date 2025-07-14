@@ -2084,7 +2084,8 @@ ul.social-icons {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll
+    background-attachment: scroll;
+  
 }
 
 .footer .ttm-row-wrapper-bg-layer.ttm-bg-layer {
@@ -3310,5 +3311,15 @@ n .more-posts .next-post .post-control-link {
 .blog-details__content-thumb-date .fa-calendar{
     color:#fff;
 }
+.main-menu li {
+  min-height: 50px;
+  font-display: swap;
+}
+.ttm_single_image-wrapper img {
+    width: 520px;
+    height: 590px;
+    object-fit: cover;
+}
+
 
 

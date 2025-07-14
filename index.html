@@ -13,16 +13,17 @@
     <meta name="description" content="Explore tempered, toughened, heat strengthened, insulated, and sand blasted glasses in Guntur by Tufftron. Quality you can trust!" />
     <meta name="keywords"
         content="tufftron,toughened glass in guntur,heat strengthened in guntur,insulated glass in guntur,laminated glass in guntur" />
-   
+     <link rel="preload" as="image" href="img/sliders/slider-one.jpg">
+
     <meta name="author" content="TUFFTRON" />
     <meta name="robots" content="index, follow">
     <meta name="owner" content="TUFFTRON" />
     <meta name="viewport" content=" width=device-width, initial-scale=1, maximum-scale=2" />
     
-    <link rel="preload" href="./fonts/fontawesome-webfont3e6e.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="./fonts/themify9f24.woff" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="./fonts/flaticon3a73.ttf" as="font" type="font/woff2" crossorigin>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+
     <link rel="canonical" href="https://tufftron.com">
 
     <link rel="shortcut icon" href="img/favicon.png" />
@@ -54,7 +55,7 @@
    
    
  
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-Q4JFFVRKY3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4JFFVRKY3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -154,11 +155,11 @@
 
                     <rs-slides>
 
-                        <rs-slide data-key="rs-1" data-title="Slide" data-thumb="img/sliders/slider-one.jpg"
+                        <rs-slide data-key="rs-1" data-title="Slide" data-thumb="img/sliders/slider-one.avif"
                             data-anim="ei:d;eo:d;s:d;r:0;t:grayscalecross;sl:d;">
 
-                            <img src="img/sliders/slider-one.jpg" rel="preload" as="image" title="slider-bg001" width="1920" height="843"
-                                class="rev-slidebg" fetchpriority="high" data-no-retina>
+                            <img src="img/sliders/slider-one.avif" rel="preload" as="image" title="slider-bg001" width="1920" height="843"
+                                class="rev-slidebg" fetchpriority="high" loading="lazy" data-no-retina>
 
 
 
@@ -194,7 +195,7 @@
                             data-anim="ei:d;eo:d;s:d;r:0;t:grayscalecross;sl:d;">
 
                             <img src="img/sliders/slider-two.jpg" title="slider-bg002" width="1920" height="843"
-                                class="rev-slidebg" data-no-retina>
+                                class="rev-slidebg" loading="lazy" data-no-retina>
 
 
                             <rs-layer id="slider-1-slide-4-layer-0" data-type="shape" data-rsp_ch="on"
@@ -228,7 +229,7 @@
                             data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;">
 
                             <img src="img/sliders/slider-three.jpg" title="slider-bg001" width="1920" height="843"
-                                class="rev-slidebg" data-no-retina>
+                                class="rev-slidebg" loading="lazy" data-no-retina>
 
                           
 
@@ -284,7 +285,7 @@
                             <!-- ttm_single_image-wrapper -->
                             <div
                                 class="ttm_single_image-wrapper text-center p-15 border_1 d-inline-block mr_50 res-991-mr-0">
-                                <img width="520" height="590"  class="img-fluid"  src="img/About-tufftron@2x.webp" alt="welcome image"    >
+                                <img width="520" height="590"  class="img-fluid"  src="img/About-tufftron.webp" fetchpriority=high alt="welcome image"    >
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-7 col-md-12">
@@ -409,7 +410,7 @@
                                 <!-- featured-thumbnail -->
                                 <div class="featured-thumbnail">
                                     <a href="heat-strength-glass.html"><img  class="img-fluid" 
-                                            src="img/home/heat-strengthen-glass.webp" alt="Heat Strength Glass"></a>
+                                            src="img/home/heat-strengthen-glass.avif" alt="Heat Strength Glass"></a>
                                 </div><!-- featured-thumbnail end-->
                                 <div class="featured-content">
                                     <div class="featured-icon">
@@ -433,7 +434,7 @@
                             <div class="featured-imagebox featured-imagebox-portfolio style2">
                                 <!-- featured-thumbnail -->
                                 <div class="featured-thumbnail">
-                                    <a href="insulated-glass.html"><img  class="img-fluid" 
+                                    <a href="insulated-glass.html"><img  class="img-fluid" loading="lazy"
                                             src="img/home/insulated-glass.WEBP" alt="Insulated Glass"></a>
                                 </div><!-- featured-thumbnail end-->
                                 <div class="featured-content">
@@ -751,7 +752,7 @@
                                 <div class="widget widget_text clearfix">
                                     <div class="footer-logo">
                                         <img width="205" height="65" id="footer-logo-img" class="img-fluid"
-                                            src="img/logo.png" alt="tufftron">
+                                            src="img/logo.png" loading="lazy" alt="tufftron">
                                     </div>
                                     <div class="textwidget widget-text">
                                         <p>A firm which caters to all your safety glass<br /> needs with finest quality
@@ -870,6 +871,14 @@
 <script src="js/jquery.twentytwenty.js" defer></script>
 
         <!-- Javascript end-->
+<script>
+    requestIdleCallback(() => {
+    const script = document.createElement('script');
+    script.src = 'revolution/js/rs6.min.js';
+    document.body.appendChild(script);
+});
+
+</script>
 
 
 </body>
