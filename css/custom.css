@@ -238,15 +238,6 @@ a {
   color: #0056b3; /* Darker blue for better contrast */
 }
 /* Match natural aspect ratios */
-img[src*="glass-skylight.webp"] {
-  aspect-ratio: 1800 / 1171;
-}
-img[src*="facade-glass.webp"] {
-  aspect-ratio: 1280 / 719;
-}
-img[src*="glass-partition.JPG"] {
-  aspect-ratio: 685 / 448;
-}
 
 
 
