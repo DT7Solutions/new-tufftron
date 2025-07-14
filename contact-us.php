@@ -134,7 +134,7 @@ if (!empty($_POST)) {
                                     <div class="site-branding ">
                                        <a class="home-link" href="index.html" title="TUFFTRON" rel="home">
                                             <img id="logo-img"  class="img-fluid"  width="167" height="53"
-                                                src="img/logo.png" alt="TUFFTRON logo-img" loading="lazy">
+                                                src="img/logo.avif" alt="TUFFTRON logo-img" loading="lazy">
                                         </a>
                                     </div><!-- site-branding end -->
                                     <div class="d-flex flex-row">
@@ -404,7 +404,7 @@ if (!empty($_POST)) {
                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 widget-area">
                             <div class="widget widget_text clearfix">
                                 <div class="footer-logo">
-                                    <img width="205" height="65" id="footer-logo-img" class="img-fluid" src="img/logo.png" alt="tufftron">
+                                    <img width="205" height="65" id="footer-logo-img" class="img-fluid" src="img/logo.avif" alt="tufftron">
                                 </div>
                                 <div class="textwidget widget-text">
                                     <p>A firm which caters to all your safety glass<br /> needs with finest quality
